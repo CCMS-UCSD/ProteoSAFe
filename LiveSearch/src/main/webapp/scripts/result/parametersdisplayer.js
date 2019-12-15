@@ -113,7 +113,7 @@ ResultViewParametersDisplayer.prototype.render = function(div, index) {
                             if( parameters_map["RUN_MSCLUSTER"][0] == "on" ){
                                 written_networking += "The data was then clustered with MS-Cluster with a parent mass tolerance of " +
                                                     parameters_map["tolerance.PM_tolerance"][0] + " Da and a MS/MS fragment ion tolerance of " + parameters_map["tolerance.Ion_tolerance"][0] +
-                                                    " Da to create consensus spectra . Further, concensus spectra that contained less than " + parameters_map["CLUSTER_MIN_SIZE"][0] + " spectra" + 
+                                                    " Da to create consensus spectra . Further, consensus spectra that contained less than " + parameters_map["CLUSTER_MIN_SIZE"][0] + " spectra" + 
                                                     " were discarded. " 
                             }
                             
@@ -131,7 +131,7 @@ ResultViewParametersDisplayer.prototype.render = function(div, index) {
                                                     " matched peaks. "
                                                     
                             if( parameters_map["ANALOG_SEARCH"][0] == "1" ){
-                                written_networking += " Analog search was enabled against the librar with a maximum mass shift of  " + parameters_map["MAX_SHIFT_MASS"][0] + " Da. "
+                                written_networking += " Analog search was enabled against the library with a maximum mass shift of  " + parameters_map["MAX_SHIFT_MASS"][0] + " Da. "
                             }
                             
                             networking_written_div.innerHTML = written_networking
